@@ -21,3 +21,39 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+data/
+logs/
+work/
+target/
+out/
+
+node_modules/
+
+# maven ignore
+*.tar
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+
+# temp ignore
+*.cache
+*.diff
+*.patch
+*.tmp
+*.rdp
+# system ignore
+.DS_Store
+Thumbs.db
+package-install/
+install-package/
+*.lock
+
