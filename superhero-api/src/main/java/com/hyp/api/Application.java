@@ -16,7 +16,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 // 扫描 mybatis mapper 包路径
 @MapperScan(basePackages = "com.next.mapper")
 // 组件扫描
-@ComponentScan(basePackages = {"com.next","com.hyp.api.config","com.hyp.api.controller"})
+@ComponentScan(basePackages = {"com.next","com.hyp.api"})
 public class Application {
 
     public static void main(String[] args) {
