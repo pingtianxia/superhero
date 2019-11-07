@@ -1,5 +1,6 @@
 package com.next.service;
 
+import com.next.common.SpGridResult;
 import com.next.pojo.Movie;
 
 import java.util.List;
@@ -34,4 +35,21 @@ public interface MovieService {
      * @return
      */
     public List<Movie> queryAllTrailers();
+
+    /***
+     *  根据关键字查询分页的电影内容
+     * @param keywords 关键字
+     * @param page 页数
+     * @param pageSize 页面条数
+     * @return
+     */
+    public SpGridResult searchTrailer(String keywords, int page, int pageSize);
+
+    /***
+     * 根据主键查询电影详情
+     * @param trailerId
+     * @return
+     */
+    public Movie queryTrailerInfo(String trailerId);
+
 }
