@@ -32,8 +32,6 @@ public class IndexController extends BasicController {
     private CarouselService carouselService;
     @Autowired
     private MovieService movieService;
-    @Autowired
-    private RedisOperator redisOperator;
 
     @ApiOperation(value = "获取首页轮播图列表", notes = "获取首页轮播图列表", httpMethod = "POST")
     @PostMapping("/carousel/list")
